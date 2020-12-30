@@ -1,13 +1,12 @@
 package br.com.leiros.api.crudbasico;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.junit.platform.runner.JUnitPlatform;
+import org.junit.platform.suite.api.IncludeClassNamePatterns;
+import org.junit.platform.suite.api.SelectPackages;
+import org.junit.runner.RunWith;
 
-@SpringBootTest
+@RunWith(JUnitPlatform.class)
+@SelectPackages("br.com.leiros.api.crudbasico")
+@IncludeClassNamePatterns({"^.*ATests?$"})
 class CrudbasicoApplicationTests {
-
-    @Test
-    void contextLoads() {
-    }
-
 }
